@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        <%= title %> | Mariam Rasheed
+    </title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.min.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="/stylesheets/fontawesome/all.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="/">🪷 Portfolio</a>
+
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link <%= title === 'Home' ? 'active' : '' %>" href="/">🏠 Home</a>
+
+                    <a class="nav-link <%= title === 'About Me' ? 'active' : '' %>" href="/about">👩🏽‍💻 About Me</a>
+
+                    <a class="nav-link <%= title === 'Projects' ? 'active' : '' %>" href="/projects">💻 Projects</a>
+
+                    <a class="nav-link <%= title === 'Contact Me' ? 'active' : '' %>" href="/contact">✉️ Contact Me</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Main Page Content-->
+    <main class="<%= title === 'Home' ? 'home-main' : '' %>">
+        <%- body %>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-links">
+
+                <a href="mailto:mariam.rasheed1@ontariotechu.net">
+                    <i class="fa-solid fa-envelope"></i>
+                    mariam.rasheed1@ontariotechu.net
+                </a>
+
+                <a href="https://github.com/Mariam-Rasheed13" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    Mariam-Rasheed13
+                </a>
+
+                <a href="https://www.linkedin.com/in/mariam-rasheed-926662307" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Mariam Rasheed
+                </a>
+
+            </div>
+            <p class="copyright">&copy; 2026 Mariam Rasheed</p>
+        </div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="/javascripts/bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
