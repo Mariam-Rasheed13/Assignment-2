@@ -92,7 +92,7 @@ p {
 /* About Me page */
 .about-section {
   background: linear-gradient(135deg, #a8bfea, #dfa8c5);
-  padding: 35px;
+  padding: 17px;
   border-radius: 20px;
   border: 2px solid #88749f;
 }
@@ -107,11 +107,17 @@ p {
   margin-bottom: 18px;
 }
 
+.about-divider {
+  height: 2px;
+  background-color: #88749f;
+  margin: 30px 0;
+}
+
 /* Projects Page */
 .project-card {
-  background: linear-gradient(135deg, #ffffff, #f8f2fb);
-  border: 1px solid #eadfee;
-  border-radius: 16px;
+  background: linear-gradient(135deg, #a8bfea, #dfa8c5);
+  border: 2px solid #88749f;
+  border-radius: 20px;
   padding: 25px;
   margin-bottom: 22px;
   box-shadow: 0 4px 12px rgba(100, 85, 125, 0.07);
@@ -124,7 +130,7 @@ p {
 }
 
 .project-card h3 {
-  color: #71628f;
+  color: #493d78;
   margin-bottom: 12px;
 }
 
