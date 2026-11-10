@@ -142,27 +142,93 @@ p {
 
 /* Contact Page */
 .contact-section {
-  background-color: #ffffff;
-  border: 1px solid #eee4f0;
-  border-radius: 18px;
-  padding: 35px;
-  box-shadow: 0 4px 15px rgba(100, 85, 125, 0.08);
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #a8bfea, #dfa8c5);
+  border: 2px solid #88749f;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(100, 85, 125, 0.07);
 }
 
 .form-label {
-  color: #625b85;
+  color: #493d78;
   font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
 }
 
 .form-control {
   border: 1px solid #dcd4e8;
   border-radius: 10px;
-  padding: 11px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-control:focus {
-  border-color: #b99acb;
-  box-shadow: 0 0 0 0.2rem rgba(185, 154, 203, 0.2);
+  border-color: #806393;
+  box-shadow: 0 0 0 0.2rem rgba(128, 99, 147, 0.3);
+}
+
+/*Verification Checkbox */
+.verification-box {
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid #b5a1c5;
+  border-radius: 8px;
+  padding: 15px;
+  display: inline-block;
+}
+
+.verification-box input {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #88749f;
+  border-radius: 4px;
+  background-color: white;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.verification-box input:checked {
+  background-color: #806393;
+  border-color: #806393;
+}
+
+.verification-box input:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 3px;
+  top: -2px;
+}
+
+.verification-box label {
+  color: #493d78;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Contact Form Buttons */
+.reset-button,
+.submit-button {
+  background-color: #a18aaf;
+  color: white;
+  border: 1px solid #806393;
+  border-radius: 10px;
+  padding: 10px 22px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover,
+.submit-button:hover {
+  background-color: #806393;
+  color: white;
 }
 
 /* Footer */
