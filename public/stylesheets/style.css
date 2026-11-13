@@ -107,6 +107,14 @@ p {
   margin-bottom: 18px;
 }
 
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #88749f;
+  border-radius: 10px;
+}
+
 .about-divider {
   height: 2px;
   background-color: #88749f;
@@ -159,7 +167,7 @@ p {
 }
 
 .form-control {
-  border: 1px solid #dcd4e8;
+  border: 1px solid #806393;
   border-radius: 10px;
   padding: 12px;
   width: 100%;
@@ -184,7 +192,7 @@ p {
   appearance: none;
   width: 22px;
   height: 22px;
-  border: 2px solid #88749f;
+  border: 2px solid #806393;
   border-radius: 4px;
   background-color: white;
   vertical-align: middle;
