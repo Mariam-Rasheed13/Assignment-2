@@ -6,7 +6,7 @@
     <!--Contact Form-->
     <div class="contact-section">
 
-        <form action="mailto:mariam.rasheed1@ontariotechu.net?subject=Contact_Form" method="POST" enctype="text/plain">
+        <form action="/contact" method="POST">
 
             <!--First Name Field-->
             <div class="mb-4">
@@ -58,5 +58,11 @@
         </form>
 
     </div>
+
+    <% if (typeof submitted !=='undefined' && submitted) { %>
+        <p class="text-center mt-3">
+            Thank you! Your form has been submitted successfully.
+        </p>
+    <% } %>
 
 </section>
